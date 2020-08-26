@@ -89,6 +89,18 @@ public class UserService {
          this.userRepository.deleteById(id);
     }
 
+    public User findUserById(int id)
+    {
+       User user = this.userRepository.findById(id);
+       if(user != null) {
+           return user;
+       } else {
+           throw new RuntimeException("User not found");
+       }
+
+    }
+
+
 
 
 
