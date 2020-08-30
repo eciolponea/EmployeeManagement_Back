@@ -1,17 +1,15 @@
 package com.ausy_technologies.demospring.Service;
 
+
 import com.ausy_technologies.demospring.Model.DAO.Role;
 import com.ausy_technologies.demospring.Model.DAO.User;
 import com.ausy_technologies.demospring.Repository.RoleRepository;
 import com.ausy_technologies.demospring.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
+
 
 @Service
 public class UserService {
@@ -52,10 +50,7 @@ public class UserService {
        {
            throw new RuntimeException("Role not found");
        }
-
-
     }
-
 
     public User saveUser3(  User user ,List<Role> roleList)
     {
@@ -99,9 +94,5 @@ public class UserService {
        }
 
     }
-
-
-
-
 
 }
